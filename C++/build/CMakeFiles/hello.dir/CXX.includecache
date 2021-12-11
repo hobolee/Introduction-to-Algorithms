@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/haobo/Downloads/algorithm/Introduction-to-Algorithms/src/2_Algorithm_Basis/Insertion_Sort.cpp
+iostream
+-
+
