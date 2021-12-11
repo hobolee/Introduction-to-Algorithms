@@ -4,12 +4,9 @@
 
 using namespace std;
 
-struct result
-{
-	double res; int l; int r;
-};
-
+// return tuple for returning multi values
 tuple<double, int, int> find_max_sub_crossing(double a[], int low, int mid, int high) {
+	// list for recording max
 	std::list<double> res;
 	res.push_back(a[mid] + a[mid + 1]);
 	double res_max = res.back();
@@ -24,6 +21,7 @@ tuple<double, int, int> find_max_sub_crossing(double a[], int low, int mid, int 
 		}
 		res.push_back(tmp);
 	}
+
 	res = { res_max };
 	for (int i = mid - 1; i >= 0; i--) {
 		tmp = res.back() + a[i];
@@ -42,6 +40,8 @@ tuple<double, int, int> find_max_sub(double a[], int low, int high) {
 		auto res1 = find_max_sub(a, low, mid);
 		auto res2 = find_max_sub(a, mid + 1, high);
 		auto res3 = find_max_sub_crossing(a, low, mid, high);
+
+		// cation: how to get values from tuple
 		double re1 = get<0>(res1);
 		double l1 = get<1>(res1);
 		double r1 = get<2>(res1);
@@ -53,6 +53,8 @@ tuple<double, int, int> find_max_sub(double a[], int low, int high) {
 		double r3 = get<2>(res3);
 		// cannot find index
 		// double res = (((res1>res2)?res1:res2)>res3)?((res1>res2)?res1:res2):res3;
+		
+		//try not to use multi-layers if
 		if (re1 > re2 && re1 > re3) {
 			return make_tuple(re1, l1, r1);
 		}
