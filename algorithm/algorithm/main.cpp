@@ -1,14 +1,9 @@
 #include <iostream>
-#include "../include/insert_sort.h"
-#include "../include/merge_sort.h"
-#include "../include/find_max_subarray.h"
+#include "insert_sort.h"
+#include "merge_sort.h"
+#include "find_max_subarray.h"
 
 using namespace std;
-
-// void insert_sort(double a[], int len);
-result find_max_sub(double a[], int low, int high);
-result find_max_sub_crossing(double a[], int low, int mid, int high);
-
 
 int main() {
 	
@@ -24,10 +19,10 @@ int main() {
 	// 	cout << d[i] << " ";
 	// }
 
-	double a[] = {1, 3, 5.5, -4, 8, 3, 7};
+	double a[] = {1, 3, -5.5, -4, 8, 3, -7};
     int length = sizeof(a) / sizeof(a[0]);
-    auto [res, l, r] = find_max_sub(a, 0, length - 1);
-    cout << "The max sub is: " << res << " " << l << " " << r << endl;
+    auto res = find_max_sub(a, 0, length - 1);
+    cout << "The max sub is: " << get<0>(res) << " " << get<1>(res) << " " << get<2>(res) << endl;
 	return 0;
 }
 
