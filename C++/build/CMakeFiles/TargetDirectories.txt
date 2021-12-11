@@ -1,3 +1,0 @@
-/home/haobo/Downloads/algorithm/Introduction-to-Algorithms/build/CMakeFiles/rebuild_cache.dir
-/home/haobo/Downloads/algorithm/Introduction-to-Algorithms/build/CMakeFiles/edit_cache.dir
-/home/haobo/Downloads/algorithm/Introduction-to-Algorithms/build/CMakeFiles/hello.dir

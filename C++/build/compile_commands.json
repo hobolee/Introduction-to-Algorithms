@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/haobo/Downloads/algorithm/Introduction-to-Algorithms/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/hello.dir/src/2_Algorithm_Basis/Insertion_Sort.cpp.o -c /home/haobo/Downloads/algorithm/Introduction-to-Algorithms/src/2_Algorithm_Basis/Insertion_Sort.cpp",
-  "file": "/home/haobo/Downloads/algorithm/Introduction-to-Algorithms/src/2_Algorithm_Basis/Insertion_Sort.cpp"
-}
-]

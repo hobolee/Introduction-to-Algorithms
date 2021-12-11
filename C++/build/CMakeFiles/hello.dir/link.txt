@@ -1,1 +1,0 @@
-/bin/x86_64-linux-gnu-g++-9  -g  -rdynamic CMakeFiles/hello.dir/src/2_Algorithm_Basis/Insertion_Sort.cpp.o  -o hello 
