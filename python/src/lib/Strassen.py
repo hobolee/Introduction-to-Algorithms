@@ -6,7 +6,7 @@ def strassen(a, b):
     if log2(len(a)) != floor(log2(len(a))) or log2(len(b)) != floor(log2(len(b))) \
             or log2(len(a[0])) != floor(log2(len(a[0]))) or log2(len(b[0])) != floor(log2(len(b[0]))) \
             or len(a) != len(a[0]) or len(b) != len(b[0]) or len(a) != len(b):
-        print("The size of matrix is not suitable.")
+        print("The size of matrix is not suitable")
         return
     if l < 1:
         return [[a[0][0] * b[0][0]]]
