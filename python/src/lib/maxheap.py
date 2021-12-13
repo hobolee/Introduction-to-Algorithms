@@ -50,7 +50,7 @@ class MaxHeap:
 
 
 if __name__ == "__main__":
-    a = [1, 7, 2, 3, 5, 8, 4]
+    a = [1, 7, 2, 3, 5, 8, 4, 5]
     A = MaxHeap(a)
     b = A.heap_sort()
     print(b)
