@@ -156,6 +156,7 @@
   <ItemGroup>
     <ClInclude Include="find_max_subarray.h" />
     <ClInclude Include="insert_sort.h" />
+    <ClInclude Include="max_heap.h" />
     <ClInclude Include="merge_sort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -24,6 +24,9 @@
     <ClInclude Include="merge_sort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="max_heap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

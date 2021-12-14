@@ -10,10 +10,8 @@ class MaxHeap:
 
     def max_heapify(self, i):
         largest = i
-        aa = self.left(i)
         if self.left(i) and self.a[self.left(i) - 1] > self.a[largest - 1]:
             largest = self.left(i)
-        bb = self.right(i)
         if self.right(i) and self.a[self.right(i) - 1] > self.a[largest - 1]:
             largest = self.right(i)
         if largest != i:
