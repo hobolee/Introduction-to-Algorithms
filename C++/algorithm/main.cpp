@@ -32,16 +32,33 @@ int main() {
 	mh.append(3);
 	mh.append(6);
 	mh.append(5);
-	mh.append(4);
-	mh.append(7);
-	mh.append(9);
-	mh.append(0);
-	cout << "a: ";
+	cout << "Orignal a is: " << "a: ";
 	for (int i = 0; i < mh.heap_size; i++) {
 		cout << mh.a[i] << " ";
 	}
-	mh.HeapSort();
-	cout << endl << "a: ";
+	mh.heap_sort();
+	cout << endl << "After heap sorting, a is: ";
+	for (int i = 0; i < mh.heap_size; i++) {
+		cout << mh.a[i] << " ";
+	}
+
+	mh.build_max_heap();
+	cout << endl << "After build, a is: ";
+	for (int i = 0; i < mh.heap_size; i++) {
+		cout << mh.a[i] << " ";
+	}
+	mh.extract_max();
+	cout << endl << "After extract, a is: ";
+	for (int i = 0; i < mh.heap_size; i++) {
+		cout << mh.a[i] << " ";
+	}
+	mh.incrase_key(3, 100);
+	cout << endl << "After increase, a is: ";
+	for (int i = 0; i < mh.heap_size; i++) {
+		cout << mh.a[i] << " ";
+	}
+	mh.insert(20);
+	cout << endl << "After insert, a is: ";
 	for (int i = 0; i < mh.heap_size; i++) {
 		cout << mh.a[i] << " ";
 	}
