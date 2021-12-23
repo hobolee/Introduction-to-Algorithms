@@ -4,6 +4,10 @@ class MaxHeap:
         self.length = len(arr)
         self.heap_size = len(arr)
 
+    def insert(self, key):
+        a = a + [key]
+
+
     def build_max_heap(self):
         for i in range(int(self.heap_size / 2), 0, -1):
             self.max_heapify(i)
@@ -55,4 +59,3 @@ if __name__ == "__main__":
     b = A.heap_sort()
     print(b)
     pass
-
