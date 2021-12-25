@@ -4,23 +4,28 @@
 #include "find_max_subarray.h"
 #include "max_heap.h"
 #include "quick_sort.h"
+#include "counting_sort.h"
 
 using namespace std;
 
 int main() {
 	
-	double d[] = {12.5, 15, 9, 20, 6, 31, 24 , 1, 5 , 6, 7, 4, 3.3};
+	// double d[] = {12.5, 15, 9, 20, 6, 31, 24 , 1, 5 , 6, 7, 4, 3.3};
+	int d[] = {1, 2, 3, 5, 7, 0, 2, 9, 5, 3, 3 };
 	// total memory size / single size -> length
 	// error happens if calculate it in insert_sort, i guess it is related to the way to pass parameters.
 	int length = sizeof(d) / sizeof(d[0]);
 	// insert_sort(d, length);
 	// merge_sort(d, 0, length - 1);
-	quick_sort(d, 1, length);
+	//quick_sort(d, 1, length);
+	int * dd = counting_sort(d, 9, length);
+
 	// is there any way to output the array without for loop?
 	cout << "array after sorting is: " << endl;
 	for (int i = 0; i < length; i++) {
-	cout << d[i] << " ";
+	cout << dd[i] << " ";
 	}
+	delete dd;
 
 	//double a[] = {1, 3, -5.5, -4, 8, 3, -7};
  //   int length = sizeof(a) / sizeof(a[0]);

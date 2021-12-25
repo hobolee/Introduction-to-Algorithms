@@ -154,6 +154,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="counting_sort.h" />
     <ClInclude Include="find_max_subarray.h" />
     <ClInclude Include="insert_sort.h" />
     <ClInclude Include="max_heap.h" />

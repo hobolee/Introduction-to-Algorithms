@@ -30,6 +30,9 @@
     <ClInclude Include="quick_sort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="counting_sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
