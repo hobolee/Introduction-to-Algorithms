@@ -160,6 +160,7 @@
     <ClInclude Include="max_heap.h" />
     <ClInclude Include="merge_sort.h" />
     <ClInclude Include="quick_sort.h" />
+    <ClInclude Include="randomized_select.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

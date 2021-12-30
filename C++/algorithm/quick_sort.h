@@ -1,8 +1,6 @@
 #include <random>
 
-
 std::default_random_engine generator;
-
 
 int partition(double a[], int low, int high) {
 	std::uniform_int_distribution<int> distribution(low, high);
